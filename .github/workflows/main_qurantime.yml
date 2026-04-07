@@ -35,8 +35,13 @@ jobs:
           npm run build --if-present
           npm run test --if-present
 
-      - name: Zip artifact for deployment
-        run: zip -r release.zip .next package.json public scripts next.config.mjs src
+      - name: Package standalone artifact for deployment
+        run: |
+          cp -r public ".next/standalone/new q/public" || true
+          cp -r .next/static ".next/standalone/new q/.next/static" || true
+          echo '{"scripts":{"start":"cd \"new q\" && node server.js"}}' > .next/standalone/package.json
+          cd .next/standalone
+          zip -r ../../release.zip .
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
