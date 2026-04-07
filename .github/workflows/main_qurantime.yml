@@ -1,7 +1,4 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-
-name: Build and deploy Node.js app to Azure Web App - qurantime
+name: Build and deploy Next.js app to Azure Web App - qurantime
 
 on:
   push:
@@ -9,70 +6,78 @@ on:
       - main
   workflow_dispatch:
 
+env:
+  APP_PATH: "new q"
+  AZURE_WEBAPP_NAME: "qurantime"
+  NODE_VERSION: "22"
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read #This is required for actions/checkout
-
     defaults:
       run:
-        working-directory: "./new q"
+        working-directory: ${{ env.APP_PATH }}
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Set up Node.js version
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '22.x'
-          cache: 'npm'
-          cache-dependency-path: './new q/package-lock.json'
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+          cache-dependency-path: ${{ env.APP_PATH }}/package-lock.json
 
-      - name: npm install, build, and test
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build app
+        run: npm run build
+
+      - name: Prepare standalone runtime
+        shell: bash
         run: |
-          npm install
-          npm run build --if-present
-          npm run test --if-present
+          mkdir -p .next-prod/standalone/.next-prod
+          cp -R .next-prod/static .next-prod/standalone/.next-prod/static
 
-      - name: Zip artifact for deployment
-        run: zip -r release.zip .next package.json public scripts next.config.mjs src
+          if [ -d public ]; then
+            cp -R public .next-prod/standalone/public
+          fi
 
-      - name: Upload artifact for deployment job
+          cp ../quran_offline.json .next-prod/quran_offline.json
+
+      - name: Create deployment package
+        shell: bash
+        run: |
+          zip -r release.zip \
+            .next-prod \
+            scripts/start-standalone.mjs \
+            package.json
+
+      - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: "./new q/release.zip"
+          path: ${{ env.APP_PATH }}/release.zip
 
   deploy:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'Production'
-    permissions:
-      id-token: write #This is required for requesting the JWT
-      contents: read #This is required for actions/checkout
+      name: Production
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
-      - name: Download artifact from build job
+      - name: Download artifact
         uses: actions/download-artifact@v4
         with:
           name: node-app
-      
-      - name: Unzip artifact
-        run: unzip release.zip
-      
-      - name: Login to Azure
-        uses: azure/login@v2
-        with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_F6E1855143E44F9396621AE24A2EA206 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_3E76BF6CEB294B87A57E19833012AB1F }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_3F20C92B1E304A70A4AB49F3A2B339A5 }}
 
-      - name: 'Deploy to Azure Web App'
+      - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'qurantime'
-          slot-name: 'Production'
-          package: .
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: release.zip
