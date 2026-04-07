@@ -37,7 +37,7 @@ jobs:
       - name: Package standalone artifact for deployment
         run: |
           cp -r public ".next-prod/standalone/new q/public" || true
-          cp -r .next-prod/static ".next-prod/standalone/new q/.next/static" || true
+          cp -r .next-prod/static ".next-prod/standalone/new q/.next-prod/static" || true
           cat > .next-prod/standalone/package.json <<'EOF'
           {
             "name": "quran-time",
