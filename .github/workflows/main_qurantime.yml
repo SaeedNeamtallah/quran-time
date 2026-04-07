@@ -36,15 +36,24 @@ jobs:
 
       - name: Package standalone artifact for deployment
         run: |
-          cp -r public ".next/standalone/new q/public" || true
-          cp -r .next/static ".next/standalone/new q/.next/static" || true      
-          node -e "require('fs').writeFileSync('.next/standalone/package.json', JSON.stringify({scripts:{start:'cd \'new q\' && node server.js'}}))"
+          cp -r public ".next-prod/standalone/new q/public" || true
+          cp -r .next-prod/static ".next-prod/standalone/new q/.next/static" || true
+          cat > .next-prod/standalone/package.json <<'EOF'
+          {
+            "name": "quran-time",
+            "private": true,
+            "scripts": {
+              "start": "node \"new q/server.js\""
+            }
+          }
+          EOF
+          tar -czf release.tgz -C .next-prod standalone
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: "./new q/.next/standalone"
+          path: "./new q/release.tgz"
 
   deploy:
     runs-on: ubuntu-latest
@@ -59,6 +68,9 @@ jobs:
         with:
           name: node-app
           path: .
+
+      - name: Unpack artifact
+        run: tar -xzf release.tgz --strip-components=1
 
       - name: Login to Azure
         uses: azure/login@v2
