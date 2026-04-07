@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: '22.x'
           cache: 'npm'
-          cache-dependency-path: './new q/package.json'
+          cache-dependency-path: './new q/package-lock.json'
 
       - name: npm install, build, and test
         run: |
