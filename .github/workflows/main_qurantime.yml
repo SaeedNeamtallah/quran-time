@@ -37,16 +37,14 @@ jobs:
       - name: Package standalone artifact for deployment
         run: |
           cp -r public ".next/standalone/new q/public" || true
-          cp -r .next/static ".next/standalone/new q/.next/static" || true
-          echo '{"scripts":{"start":"cd \"new q\" && node server.js"}}' > .next/standalone/package.json
-          cd .next/standalone
-          zip -r ../../release.zip .
+          cp -r .next/static ".next/standalone/new q/.next/static" || true      
+          node -e "require('fs').writeFileSync('.next/standalone/package.json', JSON.stringify({scripts:{start:'cd \'new q\' && node server.js'}}))"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: "./new q/release.zip"
+          path: "./new q/.next/standalone"
 
   deploy:
     runs-on: ubuntu-latest
@@ -60,9 +58,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: node-app
-      
-      - name: Unzip artifact
-        run: unzip release.zip
+          path: .
 
       - name: Login to Azure
         uses: azure/login@v2
