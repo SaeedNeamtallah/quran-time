@@ -1,0 +1,9 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /settings
+Disallow: /stats
+Disallow: /reader/challenge
+
+Host: http://127.0.0.1:4000
+Sitemap: http://127.0.0.1:4000/sitemap.xml

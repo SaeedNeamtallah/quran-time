@@ -1,0 +1,145 @@
+
+> quranic-pomodoro-next@0.1.0 dev
+> node ./scripts/run-next.mjs dev --hostname 127.0.0.1 --port 4000
+
+   ▲ Next.js 15.5.14
+   - Local:        http://127.0.0.1:4000
+   - Network:      http://127.0.0.1:4000
+
+ ✓ Starting...
+ ✓ Ready in 2.9s
+ ○ Compiling /reader/page ...
+ ✓ Compiled /reader/page in 14.2s (927 modules)
+ GET /reader/page 200 in 14841ms
+ ○ Compiling /api/page ...
+ ✓ Compiled /api/page in 1319ms (861 modules)
+ GET /reader/page 200 in 284ms
+ GET /api/status 200 in 1977ms
+ GET /api/page?page=1 200 in 1973ms
+ GET /api/page?page=1 200 in 24ms
+ ✓ Compiled /api/recitations in 319ms (863 modules)
+ GET /api/recitations 200 in 1801ms
+ ✓ Compiled /api/page_recitation in 272ms (865 modules)
+ GET /api/page_recitation?page_number=1&recitation_id=4 200 in 1382ms
+ ✓ Compiled /api/page_word_timings in 331ms (867 modules)
+ GET /api/page_word_timings?page_number=1&recitation_id=4 200 in 1516ms
+ ○ Compiling /focus ...
+ ✓ Compiled /focus in 841ms (887 modules)
+ GET /focus 200 in 967ms
+ GET /reader/page 200 in 46ms
+ GET /api/status 200 in 440ms
+ GET /api/page?page=1 200 in 438ms
+ GET /focus 200 in 30ms
+ GET /reader/page 200 in 29ms
+ GET /api/recitations 200 in 10740ms
+ GET /api/page_recitation?page_number=1&recitation_id=7 200 in 2853ms
+ GET /api/page_word_timings?page_number=1&recitation_id=7 200 in 965ms
+ GET /focus 200 in 37ms
+ GET /reader/page 200 in 31ms
+ GET /api/page?page=1 200 in 36ms
+ GET /api/status 200 in 46ms
+ GET /api/recitations 200 in 47ms
+ GET /api/page?page=2 200 in 21ms
+ GET /api/page_recitation?page_number=2&recitation_id=7 200 in 920ms
+ GET /api/page_word_timings?page_number=2&recitation_id=7 200 in 366ms
+ GET /api/page?page=3 200 in 22ms
+ GET /api/page_recitation?page_number=3&recitation_id=7 200 in 3108ms
+ GET /api/page_word_timings?page_number=3&recitation_id=7 200 in 27ms
+ GET /api/status 200 in 26ms
+ GET /focus 200 in 529ms
+ GET /reader/page 200 in 42ms
+ GET /api/page?page=84 200 in 46ms
+ GET /api/status 200 in 54ms
+ GET /api/page?page=84 200 in 40ms
+ GET /api/recitations 200 in 47ms
+ GET /api/status 200 in 26ms
+ GET /reader/page 200 in 176ms
+ GET /api/status 200 in 34ms
+ GET /api/page?page=3 200 in 33ms
+ GET /api/page?page=3 200 in 24ms
+ GET /api/recitations 200 in 39ms
+ ✓ Compiled in 994ms (876 modules)
+ GET /reader/page 200 in 278ms
+ GET /reader/page 200 in 281ms
+ ✓ Compiled /api/recitations in 297ms (518 modules)
+ GET /api/recitations 200 in 1269ms
+ GET /focus 200 in 369ms
+ GET /reader/page 200 in 143ms
+ ✓ Compiled /api/page in 337ms (519 modules)
+ ✓ Compiled (521 modules)
+ GET /api/status 200 in 1220ms
+ GET /api/page?page=3 200 in 1202ms
+ ✓ Compiled /api/recitations in 283ms (523 modules)
+ GET /api/page?page=3 200 in 1081ms
+ GET /api/recitations 200 in 1421ms
+ ✓ Compiled in 753ms (876 modules)
+ GET /reader/page 200 in 473ms
+ GET /reader/page 200 in 458ms
+ GET /reader/page 200 in 362ms
+ ○ Compiling /api/page ...
+ ✓ Compiled /api/page in 516ms (519 modules)
+ ✓ Compiled in 1ms (521 modules)
+ ✓ Compiled in 0ms (521 modules)
+ ✓ Compiled in 0ms (521 modules)
+ GET /reader/page 200 in 1170ms
+ GET /reader/page 200 in 1178ms
+ GET /api/status 200 in 2056ms
+ GET /reader/page 200 in 528ms
+ GET /reader/page 200 in 548ms
+ GET /api/page?page=3 200 in 2524ms
+ GET /api/page?page=3 200 in 404ms
+ ○ Compiling /api/recitations ...
+ ✓ Compiled /api/recitations in 598ms (523 modules)
+ GET /reader/page 200 in 372ms
+ GET /reader/page 200 in 372ms
+ GET /api/recitations 200 in 1435ms
+ ✓ Compiled in 397ms (374 modules)
+ GET /reader/page 200 in 252ms
+ GET /reader/page 200 in 130ms
+ ✓ Compiled in 1526ms (876 modules)
+ GET /reader/page 200 in 436ms
+ GET /reader/page 200 in 438ms
+ ✓ Compiled /api/recitations in 370ms (519 modules)
+ ✓ Compiled (523 modules)
+ GET /api/status 200 in 1136ms
+ GET /api/status 200 in 1138ms
+ GET /api/page?page=84 200 in 1138ms
+ GET /api/page?page=3 200 in 1139ms
+ GET /api/recitations 200 in 3576ms
+ GET /api/recitations 200 in 3576ms
+ GET /reader/page 200 in 477ms
+ GET /api/status 200 in 24ms
+ GET /api/page?page=3 200 in 30ms
+ GET /api/page?page=3 200 in 27ms
+ GET /api/recitations 200 in 34ms
+ GET /api/recitations 200 in 16ms
+ ✓ Compiled /api/page_recitation in 407ms (518 modules)
+ GET /reader/page 200 in 241ms
+ GET /reader/page 200 in 245ms
+ GET /api/page_recitation?page_number=3&recitation_id=4 200 in 2141ms
+ ✓ Compiled /api/page_word_timings in 142ms (520 modules)
+ GET /reader/page 200 in 216ms
+ GET /reader/page 200 in 222ms
+ GET /api/page_word_timings?page_number=3&recitation_id=4 200 in 1026ms
+ GET /focus 200 in 46ms
+ GET /reader/page 200 in 31ms
+ ✓ Compiled /api/recitations in 166ms (523 modules)
+ ✓ Compiled (527 modules)
+ GET /api/status 200 in 770ms
+ GET /api/page?page=3 200 in 769ms
+ GET /api/recitations 200 in 1340ms
+ GET /api/page?page=85 200 in 29ms
+ GET /focus 200 in 120ms
+ ✓ Compiled in 1255ms (876 modules)
+ GET /reader/page 200 in 349ms
+ GET /focus 200 in 67ms
+ GET /reader/page 200 in 1967ms
+ ○ Compiling /api/page ...
+ ✓ Compiled /api/page in 5.7s (519 modules)
+ ✓ Compiled (521 modules)
+ GET /api/status 200 in 10966ms
+ GET /api/page?page=1 200 in 10906ms
+ GET /api/page?page=1 200 in 342ms
+ ○ Compiling /api/recitations ...
+ ✓ Compiled /api/recitations in 11.9s (523 modules)
+ GET /api/recitations 200 in 13632ms

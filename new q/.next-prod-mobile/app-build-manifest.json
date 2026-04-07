@@ -1,0 +1,238 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/_not-found/page-8ca2b1a3f4b169e4.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/css/4b6016b7dc63d878.css",
+      "static/chunks/970-ea9ca042f8e77c8f.js",
+      "static/chunks/375-6409a95e768592f4.js",
+      "static/chunks/743-894ccd24be4d5d2f.js",
+      "static/chunks/923-54c0828fb75b7875.js",
+      "static/chunks/802-3dbc9fa8c5a98284.js",
+      "static/chunks/app/layout-fa0bcce4e729911b.js"
+    ],
+    "/api/chapter_index/route": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/api/chapter_index/route-d1cc1fc7acfcedf2.js"
+    ],
+    "/api/offline-quran/route": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/api/offline-quran/route-d1cc1fc7acfcedf2.js"
+    ],
+    "/api/page_recitation/route": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/api/page_recitation/route-d1cc1fc7acfcedf2.js"
+    ],
+    "/api/page_word_timings/route": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/api/page_word_timings/route-d1cc1fc7acfcedf2.js"
+    ],
+    "/api/recitations/route": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/api/recitations/route-d1cc1fc7acfcedf2.js"
+    ],
+    "/api/rub/route": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/api/rub/route-d1cc1fc7acfcedf2.js"
+    ],
+    "/api/rub_recitation/route": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/api/rub_recitation/route-d1cc1fc7acfcedf2.js"
+    ],
+    "/api/page/route": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/api/page/route-d1cc1fc7acfcedf2.js"
+    ],
+    "/api/rub_word_timings/route": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/api/rub_word_timings/route-d1cc1fc7acfcedf2.js"
+    ],
+    "/api/set_rub/route": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/api/set_rub/route-d1cc1fc7acfcedf2.js"
+    ],
+    "/api/status/route": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/api/status/route-d1cc1fc7acfcedf2.js"
+    ],
+    "/api/surah_challenge/route": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/api/surah_challenge/route-d1cc1fc7acfcedf2.js"
+    ],
+    "/api/tafsir/route": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/api/tafsir/route-d1cc1fc7acfcedf2.js"
+    ],
+    "/api/verse_audio/route": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/api/verse_audio/route-d1cc1fc7acfcedf2.js"
+    ],
+    "/api/verse_sequence/route": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/api/verse_sequence/route-d1cc1fc7acfcedf2.js"
+    ],
+    "/robots.txt/route": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/robots.txt/route-d1cc1fc7acfcedf2.js"
+    ],
+    "/sitemap.xml/route": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/sitemap.xml/route-d1cc1fc7acfcedf2.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/page-d1cc1fc7acfcedf2.js"
+    ],
+    "/tafsir/[verseKey]/page": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/970-ea9ca042f8e77c8f.js",
+      "static/chunks/375-6409a95e768592f4.js",
+      "static/chunks/743-894ccd24be4d5d2f.js",
+      "static/chunks/501-86b432cd5bb6ac19.js",
+      "static/chunks/97-1308f4e3e846c012.js",
+      "static/chunks/802-3dbc9fa8c5a98284.js",
+      "static/chunks/app/tafsir/[verseKey]/page-80e03383367a7f46.js"
+    ],
+    "/stats/page": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/970-ea9ca042f8e77c8f.js",
+      "static/chunks/802-3dbc9fa8c5a98284.js",
+      "static/chunks/app/stats/page-b9aea547cafa949d.js"
+    ],
+    "/settings/page": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/970-ea9ca042f8e77c8f.js",
+      "static/chunks/743-894ccd24be4d5d2f.js",
+      "static/chunks/501-86b432cd5bb6ac19.js",
+      "static/chunks/802-3dbc9fa8c5a98284.js",
+      "static/chunks/app/settings/page-346fbb321d476525.js"
+    ],
+    "/reader/challenge/page": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/reader/challenge/page-d1cc1fc7acfcedf2.js"
+    ],
+    "/reader/rub/page": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/css/f58af3aec87e8721.css",
+      "static/chunks/970-ea9ca042f8e77c8f.js",
+      "static/chunks/375-6409a95e768592f4.js",
+      "static/chunks/743-894ccd24be4d5d2f.js",
+      "static/chunks/501-86b432cd5bb6ac19.js",
+      "static/chunks/97-1308f4e3e846c012.js",
+      "static/chunks/802-3dbc9fa8c5a98284.js",
+      "static/chunks/60-4c40818de77649ea.js",
+      "static/chunks/app/reader/rub/page-3f7d42f58dbc8552.js"
+    ],
+    "/reader/page/page": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/css/f58af3aec87e8721.css",
+      "static/chunks/970-ea9ca042f8e77c8f.js",
+      "static/chunks/375-6409a95e768592f4.js",
+      "static/chunks/743-894ccd24be4d5d2f.js",
+      "static/chunks/501-86b432cd5bb6ac19.js",
+      "static/chunks/97-1308f4e3e846c012.js",
+      "static/chunks/802-3dbc9fa8c5a98284.js",
+      "static/chunks/60-4c40818de77649ea.js",
+      "static/chunks/app/reader/page/page-6af5ccfe25435ef2.js"
+    ],
+    "/focus/page": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/970-ea9ca042f8e77c8f.js",
+      "static/chunks/375-6409a95e768592f4.js",
+      "static/chunks/991-f0bfbc3d92f8c759.js",
+      "static/chunks/802-3dbc9fa8c5a98284.js",
+      "static/chunks/app/focus/page-4b515015b1b71a59.js"
+    ],
+    "/tafsir/page": [
+      "static/chunks/webpack-cde12d7923f859ef.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-38b49df12a94ee57.js",
+      "static/chunks/main-app-c0c2c92c8349a4cc.js",
+      "static/chunks/app/tafsir/page-d1cc1fc7acfcedf2.js"
+    ]
+  }
+}

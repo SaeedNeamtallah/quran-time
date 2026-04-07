@@ -1,0 +1,164 @@
+.container {
+  direction: rtl;
+}
+
+.container[data-line-row="1"] {
+  grid-row: 1;
+}
+
+.container[data-line-row="2"] {
+  grid-row: 2;
+}
+
+.container[data-line-row="3"] {
+  grid-row: 3;
+}
+
+.container[data-line-row="4"] {
+  grid-row: 4;
+}
+
+.container[data-line-row="5"] {
+  grid-row: 5;
+}
+
+.container[data-line-row="6"] {
+  grid-row: 6;
+}
+
+.container[data-line-row="7"] {
+  grid-row: 7;
+}
+
+.container[data-line-row="8"] {
+  grid-row: 8;
+}
+
+.container[data-line-row="9"] {
+  grid-row: 9;
+}
+
+.container[data-line-row="10"] {
+  grid-row: 10;
+}
+
+.container[data-line-row="11"] {
+  grid-row: 11;
+}
+
+.container[data-line-row="12"] {
+  grid-row: 12;
+}
+
+.container[data-line-row="13"] {
+  grid-row: 13;
+}
+
+.container[data-line-row="14"] {
+  grid-row: 14;
+}
+
+.container[data-line-row="15"] {
+  grid-row: 15;
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-inline: auto;
+  min-block-size: var(--line-height);
+  block-size: var(--line-height);
+}
+
+.surahIntro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-block-size: var(--line-height);
+  block-size: var(--line-height);
+  margin: 0;
+  gap: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.basmalaOnly {
+  .basmalaText {
+    transform: translateY(0.02em);
+  }
+}
+
+.surahTitle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  color: rgb(var(--ink));
+  padding: 0;
+  font-size: clamp(0.78rem, 1.05vw, 0.95rem);
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.basmalaText {
+  color: rgb(var(--ink));
+  font-size: clamp(0.95rem, 1.25vw, 1.15rem);
+  line-height: 1;
+  margin: 0;
+  white-space: nowrap;
+  font-family: var(--qcf-page-font-family), UthmanicHafs, var(--font-quran);
+}
+
+.surahIntroCompact {
+  flex-direction: row;
+  justify-content: center;
+  gap: clamp(0.2rem, 0.5vw, 0.45rem);
+}
+
+.surahTitleCompact {
+  color: rgb(var(--ink));
+  font-size: clamp(0.72rem, 0.95vw, 0.88rem);
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.introDivider {
+  color: rgb(var(--muted));
+  font-size: clamp(0.58rem, 0.8vw, 0.68rem);
+  line-height: 1;
+  transform: translateY(-0.02em);
+}
+
+.basmalaCompact {
+  color: rgb(var(--ink));
+  font-size: clamp(0.85rem, 1.1vw, 1.02rem);
+  line-height: 1;
+  white-space: nowrap;
+  font-family: var(--qcf-page-font-family), UthmanicHafs, var(--font-quran);
+}
+
+.fixedWidth {
+  inline-size: var(--line-width, auto);
+}
+
+.mobileInline {
+  display: inline;
+  white-space: normal;
+}
+
+@media (min-width: 768px) {
+  .mobileInline {
+    display: block;
+  }
+}
