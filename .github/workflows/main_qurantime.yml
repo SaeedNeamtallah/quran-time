@@ -15,13 +15,19 @@ jobs:
     permissions:
       contents: read #This is required for actions/checkout
 
+    defaults:
+      run:
+        working-directory: "./new q"
+
     steps:
       - uses: actions/checkout@v4
 
       - name: Set up Node.js version
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '22.x'
+          cache: 'npm'
+          cache-dependency-path: './new q/package-lock.json'
 
       - name: npm install, build, and test
         run: |
@@ -29,11 +35,14 @@ jobs:
           npm run build --if-present
           npm run test --if-present
 
+      - name: Zip artifact for deployment
+        run: zip -r release.zip .next package.json public scripts next.config.mjs src
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: .
+          path: "./new q/release.zip"
 
   deploy:
     runs-on: ubuntu-latest
@@ -48,6 +57,9 @@ jobs:
         with:
           name: node-app
       
+      - name: Unzip artifact
+        run: unzip release.zip
+
       - name: Login to Azure
         uses: azure/login@v2
         with:
@@ -62,4 +74,3 @@ jobs:
           app-name: 'qurantime'
           slot-name: 'Production'
           package: .
-          
